@@ -10,6 +10,7 @@ import { StarportCraft } from './StarportCraft'
  */
 export const StarportCarrier = defineComponent({
   name: 'StarportCarrier',
+  inheritAttrs: false,
   setup(_, { slots }) {
     const state = createInternalState(inject(InjectionOptions, {}))
     const app = getCurrentInstance()!.appContext.app
